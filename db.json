@@ -1,0 +1,53 @@
+{
+    "users": [
+      { "id": 1, "name": "John Doe", "status": "active" }
+    ],
+    "roles": [
+      { "id": 1, "name": "Admin", "status": "active" }
+    ],
+    "role_user": [
+      { "id": 1, "userID": 1, "roleID": 1 }
+    ],
+    "customers": [
+      { "id": 1, "name": "Jane Smith", "sdt": "123456789", "diemthuong": 100, "userID": 1, "status": "active" }
+    ],
+    "categories": [
+      { "id": 1, "name": "Electronics", "description": "Various electronic items", "image": "electronics.png", "status": "active" }
+    ],
+    "sub_categories": [
+      { "id": 1, "name": "Mobile Phones", "description": "All kinds of mobile phones", "image": "mobiles.png", "categoryID": 1, "status": "active" }
+    ],
+    "sizes": [
+      { "id": 1, "name": "Large", "description": "Large size" }
+    ],
+    "images": [
+      { "id": 1, "image_url": "image1.png", "product_detail_id": 1 }
+    ],
+    "payments": [
+      { "id": 1, "name": "Credit Card", "status": "active" }
+    ],
+    "vouchers": [
+      { "id": 1, "name": "New Year Discount", "status": "active", "image": "voucher.png", "customerID": 1 }
+    ],
+    "products": [
+      { "id": 1, "name": "iPhone", "image": "iphone.png", "status": "available", "sub_categories_ID": 1 }
+    ],
+    "product_details": [
+      { "id": 1, "sizeID": 1, "price": 1000, "quantity": 10, "productID": 1, "sale": null, "status": "active" }
+    ],
+    "tables": [
+      { "id": 1, "name_table": "Table 1", "description": "Near window" }
+    ],
+    "time_order_table": [
+      { "id": 1, "tableID": 1, "userID": 1, "phone": "123456789", "time_order": "2023-08-17T12:30:00", "status": "pending" }
+    ],
+    "carts": [
+      { "id": 1, "ma_bill": 1, "product_detail_id": 1, "quantity": 1, "status": "active" }
+    ],
+    "bills": [
+      { "id": 1, "ma_bill": 1, "userID": 1, "tableID": 1, "order_date": "2023-08-17T13:00:00", "total_money": 1000, "address": "123 Main St", "payment_id": 1, "id_voucher": 1, "note": "No onions", "status": "completed" }
+    ],
+    "bill_details": [
+      { "id": 1, "bill_id": 1, "product_detail_id": 1, "quantity": 1, "status": "active" }
+    ]
+  }
